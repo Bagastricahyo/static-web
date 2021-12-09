@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: inline;
+}
+
+.jumbotron {
+  background-color: #126e82;
+  padding: 100px;
+  text-align: center;
+  color: white;
+}
+
+.navbar {
+  background-color: #51c4d3;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+.navbar li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 30px;
+}
+
+.navbar li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 1700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+}
+
+.content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  width: 25%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card {
+  flex-grow: 1;
+  margin: 5px;
+  padding: 20px;
+  background-color: #d8e3e7;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+
+footer {
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  letter-spacing: 1px;
+  background-color: #132c33;
+  padding: 10px;
+}
+
+.format {
+  font-family: 'Roboto', sans-serif;
+}
+
+.image {
+  width: 60%;
+}
+
+.profile-img {
+  width: 80px;
+}
+
+.contact li {
+  display: inline;
+  list-style-type: none;
+}
+
+.contact a {
+  margin-right: 20px;
+}
+
+.icon {
+  width: 25px;
+}
+
+@media screen and (max-width: 950px) {
+ .container {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .content,
+ .sidebar {
+   width: 100%;
+ }
+ 
+ .navbar li {
+   margin-right: 15px;
+ }
+}
